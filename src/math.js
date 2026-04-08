@@ -18,6 +18,14 @@ function somaDobroNumerosParesFuncional(numeros){
  */
 function somaDobroNumerosParesProcedural(numeros){
     // TODO: Insira seu código estruturado aqui   
+    let somaQuadradosPares = 0;
+
+    for(let i = 0; i< numeros.length; i++){
+        if(numeros[i] % 2 === 0){
+            somaQuadradosPares = somaQuadradosPares + numeros[i] *2;
+        }
+    }
+    return somaQuadradosPares;
 }
 
 export { somaDobroNumerosParesFuncional, somaDobroNumerosParesProcedural };
